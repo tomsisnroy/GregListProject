@@ -1,0 +1,67 @@
+body {
+  margin: 0; /* Tricky: override browser default */
+  padding: 80px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px; /* Set baseline font-size for whole page */
+}
+
+nav {
+  	height: 40px;
+  	background-color: lightgrey;
+  	position: fixed;
+  	width: 100%;
+  	top: 0;
+  	left: 0;
+  	right: 0;
+}
+
+nav ul {              /*why do I need the ul to be inline and no-list style? */   
+    display: inline-block;
+  	list-style: none;
+}
+
+nav li {
+  	display: inline-block;
+}
+
+.rl-logo {
+	font-size: 18px;
+	margin: 0;
+	padding: 0;
+	position: absolute; /*these next 3 lines moves the logo up*/
+	top: 10px;
+	left: 10px;
+}
+
+.top-nav {
+	font-size: 18px;
+	margin: 0;
+	padding: 0;
+	position: absolute; /*these next 3 lines moves the logo up*/
+	top: 10px;
+	right: 10px;
+}
+
+
+                           /* search css*/
+
+.search-field, .search-button {
+  display: inline-block;
+  height: 30px;
+  border: 1px solid #DDDDDD;
+  border-radius: 3px;
+ }   
+                         
+.search-field {
+  font-size: 16px;  /*Must be set due to specificity weirdness of inputs */
+  font-weight: 500;
+  width: 400px;
+  padding: 0 5px 0 8px;
+}
+       /*this sets the size and properties of the search button*/
+.search-button {
+  width: 37px;
+  padding: 2px 6px 3px 6px;
+  background-color: white;
+  vertical-align: bottom;
+}                           
